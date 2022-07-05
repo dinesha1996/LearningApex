@@ -10,6 +10,7 @@ public class Accopp
                 con.add(new Contact(FirstName = 'Dinesh', LastName = 'Avulapati'));
                 System.debug('old  '+a.Status__C);
    			    System.debug('New  '+a.Status__C);
+                System.debug('New Old');
             }
         }
         insert con;
