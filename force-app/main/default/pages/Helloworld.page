@@ -1,0 +1,13 @@
+<apex:page sidebar="false" showHeader="false">
+    <h6>
+        Hello World !
+    </h6>
+    <apex:Pageblock title="A section">
+    	<apex:pageblocksection title="Nice one">
+        	Im out there
+        </apex:pageblocksection>
+    </apex:pageblock>
+    <p>
+         This is ICRM project
+    </p>
+</apex:page>

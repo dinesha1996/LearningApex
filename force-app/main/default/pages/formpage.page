@@ -1,0 +1,17 @@
+<apex:page standardController="Account">
+    <Apex:form >
+        <apex:pageBlock title="contact">
+    <apex:pageBlockTable value="{!Account.contacts}" var="con">
+        <apex:column >
+            <apex:outputlink value="{! URLFOR($Action.contact.edit, con.id)}">
+            Edit
+            </apex:outputlink>
+    		<apex:outputlink value="{! URLFOR($Action.contact.delete, con.id)}">
+            Delete
+            </apex:outputlink>
+        </apex:column>
+        <apex:column value="{!con.name}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+        </Apex:form>
+</apex:page>
